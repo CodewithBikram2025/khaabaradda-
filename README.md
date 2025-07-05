@@ -1,6 +1,3 @@
-# khaabaradda-
-
-
 <h1 align="center">Hi 👋, I'm Bikramjit Pakhira</h1>
 <h3 align="center">I’m a 2nd-year student and passionate Frontend Developer, building responsive and user-friendly web interfaces.</h3>
 
