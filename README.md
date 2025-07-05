@@ -1,7 +1,8 @@
 <h1 align="center">Hi 👋, I'm Bikramjit Pakhira</h1>
 <h3 align="center">I’m a 2nd-year student and passionate Frontend Developer, building responsive and user-friendly web interfaces.</h3>
 
-- 🔭 I’m currently pursuing B.Tech from B.P.PODDAR INSTITUTE OF MANAGEMENT & TECHNOLOGY [Khaabar Adda](https://khaabaradda.rf.gd)
+- 🔭 I’m currently pursuing B.Tech from B.P.PODDAR INSTITUTE OF MANAGEMENT & TECHNOLOGY
+-  KhaabarAdda(https://khaabaradda.rf.gd)
 
 - 🌱 I’m currently learning *DSA in C language*
 
