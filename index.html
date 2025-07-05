@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khaabaradda.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="knife"></div>
+            <div class="fork"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Khaabar<span>Adda</span></a>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#chefs">Chefs</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="right-header">
+                <a href="#contact" class="btn btn-primary">Reservations</a>
+                <div class="menu-btn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <!-- Add this inside .right-header -->
+            <div class="user-auth">
+               <a href="index.html" id="login-btn" class="btn btn-outline">Login</a>
+               <a href="login.html" id="logout-btn" class="btn btn-outline">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero" id="home">
+        <div class="slider-container">
+            <!-- Slide 1 -->
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+                <div class="slide-content">
+                    <span class="subtitle">Exquisite Dining</span>
+                    <h1 class="title">Premium Steak Experience</h1>
+                    <p class="description">Our 28-day aged USDA prime beef cooked to perfection</p>
+                    <a href="#menu" class="btn btn-secondary">View Menu</a>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80');">
+                <div class="slide-content">
+                    <span class="subtitle">Seasonal Specials</span>
+                    <h1 class="title">Fresh Seafood Selection</h1>
+                    <p class="description">Daily caught seafood prepared with Mediterranean flavors</p>
+                    <a href="#menu" class="btn btn-secondary">Today's Catch</a>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');">
+                <div class="slide-content">
+                    <span class="subtitle">Romantic Setting</span>
+                    <h1 class="title">Perfect Evening Out</h1>
+                    <p class="description">Create unforgettable memories in our elegant dining room</p>
+                    <a href="#menu" class="btn btn-secondary">Book a Table</a>
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+                <div class="slide-content">
+                    <span class="subtitle">Culinary Excellence</span>
+                    <h1 class="title">Award-Winning Cuisine</h1>
+                    <p class="description">Michelin-starred chefs creating innovative dishes</p>
+                    <a href="#chefs" class="btn btn-secondary">Meet Our Chefs</a>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="slide" style="background-image: url('pic5.jpg');">
+                <div class="slide-content">
+                    <span class="subtitle">Taste of Bengal</span>
+                    <h1 class="title">Traditional Flavors</h1>
+                    <p class="description">Relish the best of Kolkata’s authentic dishes</p>
+                    <a href="#menu" class="btn btn-secondary">Explore Menu</a>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="slide" style="background-image: url('pic6.jpg');">
+                <div class="slide-content">
+                    <span class="subtitle">Royal Dining</span>
+                    <h1 class="title">Elegant Interiors</h1>
+                    <p class="description">Experience Kolkata's regal charm in every bite</p>
+                    <a href="#gallery" class="btn btn-secondary">View Gallery</a>
+                </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="slide" style="background-image: url('pic7.jpg');">
+                <div class="slide-content">
+                    <span class="subtitle">Food with Soul</span>
+                    <h1 class="title">Bengali Thali Specials</h1>
+                    <p class="description">Curated Bengali meals served with tradition</p>
+                    <a href="#gallery" class="btn btn-secondary">Discover More</a>
+                </div>
+            </div>
+
+            <!-- Slide 8 -->
+            <div class="slide" style="background-image: url('pic8.jpg');">
+                <div class="slide-content">
+                    <span class="subtitle">Street to Fine Dine</span>
+                    <h1 class="title">Fusion Cuisine</h1>
+                    <p class="description">Where Kolkata street food meets luxury dining</p>
+                    <a href="#gallery" class="btn btn-secondary">Try It Now</a>
+                </div>
+            </div>
+
+            <!-- Slide 9 -->
+            <div class="slide" style="background-image: url('pic9.jpg');">
+                <div class="slide-content">
+                    <span class="subtitle">Cozy Corners</span>
+                    <h1 class="title">Authentic Indian Ambiance</h1>
+                    <p class="description">A warm and inviting atmosphere for families and friends</p>
+                    <a href="#gallery" class="btn btn-secondary">See More</a>
+                </div>
+            </div>
+
+            <!-- Slide 10 -->
+            <div class="slide" style="background-image: url('pic10.jpg');">
+                <div class="slide-content">
+                    <span class="subtitle">Sweet Treats</span>
+                    <h1 class="title">Bengali Desserts</h1>
+                    <p class="description">End your meal with iconic sweets like rosogolla & sandesh</p>
+                    <a href="#menu" class="btn btn-secondary">Taste Now</a>
+                </div>
+            </div>
+
+            <!-- Slide 11 -->
+            <div class="slide" style="background-image: url('pic11.jpg');">
+                <div class="slide-content">
+                    <span class="subtitle">Kolkata Nights</span>
+                    <h1 class="title">Rooftop Dining</h1>
+                    <p class="description">Enjoy the city lights with exquisite food and drinks</p>
+                    <a href="#gallery" class="btn btn-secondary">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Navigation -->
+        <div class="slider-nav">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <div class="dots-container"></div>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Our Story</span>
+                <h2 class="title">About Khaabar Adda</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <div class="img-box">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Restaurant Interior">
+                        <div class="experience">
+                            <span class="number">10</span>
+                            <span class="text">Years of<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>The Finest Dining Experience Since 2015</h3>
+                    <p>Founded by Chef Vikash Prasad in 2015, Khaabar Adda has established itself as one of the premier dining destinations in the city. Our philosophy is simple: source the finest ingredients, prepare them with skill and passion, and present them with artistry.</p>
+                    <p>We take pride in our seasonal menu that changes monthly to reflect the best produce available. Our wine cellar boasts over 500 selections from around the world, carefully curated by our sommelier to complement our dishes.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <h4>Seasonal Menu</h4>
+                            <p>Fresh ingredients sourced daily from local farms</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wine-glass-alt"></i>
+                            <h4>Premium Wines</h4>
+                            <p>Extensive collection of international wines</p>
+                        </div>
+                    </div>
+                    <a href="#gallery" class="btn btn-primary">View Gallery</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+<section class="menu section-padding" id="menu">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">Our Selection</span>
+            <h2 class="title">Exquisite Menu</h2>
+        </div>
+        <div class="menu-tabs">
+            <button class="tab-btn active" data-category="all">All</button>
+            <button class="tab-btn" data-category="starters">Starters</button>
+            <button class="tab-btn" data-category="mains">Main Courses</button>
+            <button class="tab-btn" data-category="desserts">Desserts</button>
+            <button class="tab-btn" data-category="drinks">Drinks</button>
+        </div>
+        
+        <div class="menu-items">
+            <!-- Starters -->
+            <div class="menu-item" data-category="starters">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Scallops">
+                </div>
+                <div class="item-content">
+                    <h3>Seared Scallops <span>$18</span></h3>
+                    <p>With cauliflower puree and truffle oil</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="starters">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Bruschetta">
+                </div>
+                <div class="item-content">
+                    <h3>Tomato Bruschetta <span>$12</span></h3>
+                    <p>Tomatoes, garlic, and fresh basil on toasted bread</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="starters">
+                <div class="item-img">
+                    <img src="menu7.jpg" alt="Bruschetta">
+                </div>
+                <div class="item-content">
+                    <h3>Veg Cutlet <span>$12</span></h3>
+                    <p>Tomatoes, garlic, and fresh vagitable on cutlet</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="starters">
+                <div class="item-img">
+                    <img src="menu8.jpg" alt="Bruschetta">
+                </div>
+                <div class="item-content">
+                    <h3>Fish Fry <span>$12</span></h3>
+                    <p>Tomatoes, garlic, and fresh basil on toasted bread</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="starters">
+                <div class="item-img">
+                    <img src="menu9.jpg" alt="Bruschetta">
+                </div>
+                <div class="item-content">
+                    <h3>Mochar Chop <span>$12</span></h3>
+                    <p>Tomatoes, garlic, and fresh basil on toasted bread</p>
+                </div>
+            </div>
+            
+            <!-- Mains -->
+            <div class="menu-item" data-category="mains">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Steak">
+                </div>
+                <div class="item-content">
+                    <h3>Filet Mignon <span>$42</span></h3>
+                    <p>8oz prime cut with roasted potatoes and vegetables</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pasta">
+                </div>
+                <div class="item-content">
+                    <h3>Truffle Pasta <span>$26</span></h3>
+                    <p>Homemade fettuccine with wild mushrooms</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <div class="item-img">
+                    <img src="menu10.jpg" alt="Pasta">
+                </div>
+                <div class="item-content">
+                    <h3>Shorshe Ilish <span>$22</span></h3>
+                    <p>Homemade fettuccine with big Ilish, shorshe, and many </p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <div class="item-img">
+                    <img src="menu11.jpg" alt="Pasta">
+                </div>
+                <div class="item-content">
+                    <h3>Kosha Mangsho <span>$19</span></h3>
+                    <p>Homemade fettuccine with wild meat </p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <div class="item-img">
+                    <img src="menu4.jpg" alt="Pasta">
+                </div>
+                <div class="item-content">
+                    <h3>Mutton Biriyani <span>$25</span></h3>
+                    <p>Homemade fettuccine with wild mutton,biriyani rice,potato and with salad</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <div class="item-img">
+                    <img src="pic5.jpg" alt="Pasta">
+                </div>
+                <div class="item-content">
+                    <h3>Bangalir Navaratna <span>$19</span></h3>
+                    <p>Homemade fettuccine with india special basmoti rice </p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <div class="item-img">
+                    <img src="1.jpg" alt="Pasta">
+                </div>
+                <div class="item-content">
+                    <h3>Tandoori Chiken <span>$19</span></h3>
+                    <p>Homemade fettuccine with india special chiken </p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <div class="item-img">
+                    <img src="2.jpg" alt="Pasta">
+                </div>
+                <div class="item-content">
+                    <h3>Paneer Tikka <span>$19</span></h3>
+                    <p>Homemade fettuccine with india special paneer roast and it has strong protein</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <div class="item-img">
+                    <img src="menu6.jpg" alt="Pasta">
+                </div>
+                <div class="item-content">
+                    <h3>Hakka Noodles <span>$19</span></h3>
+                    <p>Homemade fettuccine with india special noodles </p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <div class="item-img">
+                    <img src="3.jpg" alt="Pasta">
+                </div>
+                <div class="item-content">
+                    <h3>Basanti Pulao <span>$19</span></h3>
+                    <p>Homemade fettuccine with india special traditional pulao rice with combination of sweet or spicy flavors.  </p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <div class="item-img">
+                    <img src="4.jpg" alt="Pasta">
+                </div>
+                <div class="item-content">
+                    <h3>Naan Paratha <span>$19</span></h3>
+                    <p>Homemade fettuccine with india special soft, pillowy or delicious butter naan</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <div class="item-img">
+                    <img src="5.jpg" alt="Pasta">
+                </div>
+                <div class="item-content">
+                    <h3>Paratha <span>$19</span></h3>
+                    <p>Homemade fettuccine with india special Ganesh company maida </p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <div class="item-img">
+                    <img src="6.jpg" alt="Pasta">
+                </div>
+                <div class="item-content">
+                    <h3>Fried Rice <span>$19</span></h3>
+                    <p>Homemade fettuccine with india special basmoti rice, vegitable oil or other ingredients </p>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-item" data-category="desserts">
+                <div class="item-img">
+                    <img src="menu1.jpg" alt="Lava Cake">
+                </div>
+                <div class="item-content">
+                    <h3>Chocolate Lava Cake <span>$14</span></h3>
+                    <p>With raspberry coulis and vanilla ice cream</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="desserts">
+                <div class="item-img">
+                    <img src="menu2.jpg" alt="Crème Brûlée">
+                </div>
+                <div class="item-content">
+                    <h3>Crème Brûlée <span>$12</span></h3>
+                    <p>Classic vanilla bean with a caramelized sugar crust</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="desserts">
+                <div class="item-img">
+                    <img src="menu12.jpg" alt="Crème Brûlée">
+                </div>
+                <div class="item-content">
+                    <h3>Rosogolla <span>$12</span></h3>
+                    <p>Classic special indian sweet</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="desserts">
+                <div class="item-img">
+                    <img src="menu13.jpg" alt="Crème Brûlée">
+                </div>
+                <div class="item-content">
+                    <h3>Mishti Doi <span>$12</span></h3>
+                    <p>Classic special indian sweet curd</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="desserts">
+                <div class="item-img">
+                    <img src="pic10.jpg" alt="Crème Brûlée">
+                </div>
+                <div class="item-content">
+                    <h3>Sandesh <span>$12</span></h3>
+                    <p>Classic special indian sweet</p>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="15.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">
+                    <h3>Apple Juice <span>$16</span></h3>
+                    <p>Juices</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="14.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">
+                    <h3>Orange Juice <span>$16</span></h3>
+                    <p>Juices</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="18.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">
+                    <h3>Pineapple Juice <span>$16</span></h3>
+                    <p>Juices</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="17.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">
+                    <h3>Mango Juice <span>$16</span></h3>
+                    <p>Juices</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="16.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">
+                    <h3>Carrot Juice <span>$16</span></h3>
+                    <p>Juices</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="19.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">
+                    <h3>Cranberry Juice <span>$16</span></h3>
+                    <p>Juices </p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="menu3.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">
+                    <h3>Signature Old Fashioned <span>$16</span></h3>
+                    <p>Rye whiskey, Angostura bitters, and an orange twist</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Espresso Martini">
+                </div>
+                <div class="item-content">
+                    <h3>Espresso Martini <span>$15</span></h3>
+                    <p>Vodka, coffee liqueur, and freshly brewed espresso</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="7.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">
+                    <h3>Salton <span>$16</span></h3>
+                    <p>A renowned Brazilian wine brand celebrated for its rich heritage and elegant flavors</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="8.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">
+                    <h3>Winetage <span>$16</span></h3>
+                    <p>blends tradition and innovation, offering wines that capture timeless taste</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="9.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">
+                    <h3>VINARIA.DIN.VALE <span>$16</span></h3>
+                    <p>A Moldovan winery known for its vibrant character and deep-rooted winemaking culture</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="10.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">
+                    <h3>WATERFORD ESTATE <span>$16</span></h3>
+                    <p>Estate from South Africa crafts premium wines with a perfect balance of nature and precision</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="11.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">
+                    <h3>Americano <span>$16</span></h3>
+                    <p>Hot Drinks</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="12.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">
+                    <h3>Hot Chocolate <span>$16</span></h3>
+                    <p>Hot Drinks</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="20.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">Lemon-Lime Soda <span>$16</span></h3>
+                    <p>Soft Drinks</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <div class="item-img">
+                    <img src="21.jpg" alt="Cocktail">
+                </div>
+                <div class="item-content">
+                    <h3>Ginger Ale <span>$16</span></h3>
+                    <p>Soft Drinks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Visual Feast</span>
+                <h2 class="title">Food Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Food">
+                    <div class="overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Food">
+                    <div class="overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="menu1.jpg" alt="Food">
+                    <div class="overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="pic5.jpg" alt="Food">
+                    <div class="overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="pic10.jpg" alt="Food">
+                    <div class="overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="menu4.jpg" alt="Food">
+                    <div class="overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="menu5.jpg" alt="Food">
+                    <div class="overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="menu6.jpg" alt="Food">
+                    <div class="overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <!-- More gallery items -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Chefs Section -->
+    <section class="chefs section-padding" id="chefs">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Meet The Team</span>
+                <h2 class="title">Our Master Chefs</h2>
+            </div>
+            <div class="chefs-slider">
+                <div class="chef-card">
+                    <div class="chef-img">
+                        <img src="chief1.jpg" alt="Chef">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/Bikramjit2028"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>Ablu Bhowmick</h3>
+                        <p>Sous Chef</p>
+                    </div>
+                </div>
+
+                <div class="chef-card">
+                    <div class="chef-img">
+                        <img src="https://assets.telegraphindia.com/telegraph/PDP_3703.jpg" alt="Chef">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/Bikramjit2028"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>Vikash Prasad</h3>
+                        <p>Executive Chef</p>
+                    </div>
+                </div>
+                <div class="chef-card">
+                    <div class="chef-img">
+                        <img src="chief2.jpg" alt="Chef">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/Bikramjit2028"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>Liltu Bera</h3>
+                        <p>Commis Chef</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Testimonials</span>
+                <h2 class="title">What Our Guests Say</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The best dining experience I've had in years. Every dish was a masterpiece, and the service was impeccable."</p>
+                    <div class="guest">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Guest">
+                        <h4>Sarah Johnson</h4>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The best dining experience I've had in years. Every dish was a masterpiece, and the service was impeccable."</p>
+                    <div class="guest">
+                        <img src="https://ecodrymd.com/wp-content/uploads/2025/02/rohan-puri-sport-management-700x600-1.jpg" alt="Guest">
+                        <h4>David Sengupta</h4>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The best dining experience I've had in years. Every dish was a masterpiece, and the service was impeccable."</p>
+                    <div class="guest">
+                        <img src="data:image/jpeg;base64,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" alt="Guest">
+                        <h4>Kiron Sharma</h4>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The best dining experience I've had in years. Every dish was a masterpiece, and the service was impeccable."</p>
+                    <div class="guest">
+                        <img src="https://plus.unsplash.com/premium_photo-1722682239201-21c8173e776b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwbWVufGVufDB8fDB8fHww" alt="Guest">
+                        <h4>Kishore Ganguly</h4>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The best dining experience I've had in years. Every dish was a masterpiece, and the service was impeccable."</p>
+                    <div class="guest">
+                        <img src="https://snapynow.com/wp-content/uploads/beautiful-girls-dp_116.webp" alt="Guest">
+                        <h4>Sk.Hasina Khatun</h4>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The best dining experience I've had in years. Every dish was a masterpiece, and the service was impeccable."</p>
+                    <div class="guest">
+                        <img src="https://st.depositphotos.com/1011643/4430/i/450/depositphotos_44309759-stock-photo-young-indian-man-outdoors.jpg" alt="Guest">
+                        <h4>Nabin Roy</h4>
+                    </div>
+                </div>
+                <!-- More testimonials -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+<section class="contact section-padding" id="contact">
+    <div class="container">
+        <!-- Section Header Updated for Reservations -->
+        <div class="section-header">
+            <span class="subtitle">Reservation</span>
+            <h2 class="title">Book Your Table</h2>
+        </div>
+
+        <div class="contact-content">
+            <!-- The contact info remains the same, as it's still useful -->
+            <div class="contact-info">
+                <div class="info-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Address</h4>
+                    <p>18A, Park Street Area, <br>Kolkata, West Bengal 700071</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>Phone</h4>
+                    <p>+91 8348458035</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>khaabaradda2025@gmail.com</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-clock"></i>
+                    <h4>Opening Hours</h4>
+                    <p>Monday - Friday: 11:00 AM - 11:00 PM<br>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+
+            <!-- Reservation Form -->
+            <div class="contact-form">
+                <form id="reservation-form">
+                    <!-- Two-column layout for form fields -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <!-- Date input, with past dates disabled by JS -->
+                            <input type="date" name="date" id="date-picker" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="time" required>
+                                <option value="" disabled selected>Select Time</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                                <option value="22:00">10:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="number" name="guests" placeholder="Number of Guests" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Special Requests (e.g., birthday, allergies)"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Book My Table</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Simple script to prevent users from selecting a past date
+    document.addEventListener('DOMContentLoaded', function() {
+        const datePicker = document.getElementById('date-picker');
+        if (datePicker) {
+            const today = new Date();
+            const yyyy = today.getFullYear();
+            const mm = String(today.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+            const dd = String(today.getDate()).padStart(2, '0');
+            
+            const todayString = '${yyyy}-${mm}-${dd}';
+            datePicker.setAttribute('min', todayString);
+        }
+ });
+</script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Khaabar Adda</h3>
+                    <p>Experience culinary excellence in the heart of the city. Our passion for food is matched only by our commitment to exceptional service.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/bikramjitpakhira"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/bikram_20_28"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/Bikramjit2028"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/CodewithBikram2025"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 khaabaradda. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
+</body>
+<!-- Login Dashboard Modal -->
+<div class="login-modal" id="login-modal">
+     <div class="modal-content">
+        <span class="close-modal" id="close-login">&times;</span>
+         <h2>Login</h2>
+         <form id="login-form">
+           <input type="email" placeholder="Email" required>
+           <input type="password" placeholder="Password" required>
+           <button type="submit" class="btn btn-primary">Login</button>
+         </form>
+     </div>
+</div>
+</html>

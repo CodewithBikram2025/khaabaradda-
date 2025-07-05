@@ -1,0 +1,153 @@
+/* Basic Reset and Body Styles */
+body {
+     background: url('backimg.jpg') no-repeat center center fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Form Container Styling */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container.hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Fields and Button Styling */
+.input-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box; /* Important for padding and width */
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* "OR" Separator Styling */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #aaa;
+    margin: 25px 0;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.or-text {
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Social Login Button Styling */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between buttons */
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+    gap: 10px; /* Space between icon and text */
+}
+
+.social-btn:hover {
+    opacity: 0.9;
+}
+
+.social-btn svg {
+    height: 20px;
+    width: 20px;
+}
+
+/* Provider-specific colors */
+.social-btn.google {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #555;
+}
+
+.social-btn.facebook {
+    background-color: #1877F2;
+    color: #fff;
+}
+
+/* Text to switch between Login and Sign Up */
+.switch-form-text {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #555;
+}
+
+.switch-form-text a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.switch-form-text a:hover {
+    text-decoration: underline;
+}
