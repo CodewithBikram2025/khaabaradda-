@@ -1145,21 +1145,17 @@ css
   transform: none;
 }
 
-/* --- Add this to your CSS file --- */
-
 /* Style for the two-column form layout */
 .contact-form .form-row {
     display: flex;
-    gap: 1.5rem; /* Creates space between the two columns */
-    margin-bottom: 1.5rem; /* Space between rows */
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .contact-form .form-row .form-group {
     flex: 1; /* Makes each column take up equal space */
-    margin-bottom: 0; /* Remove bottom margin as it's handled by the parent .form-row */
+    margin-bottom: 0;
 }
-
-/* Ensure all form inputs have consistent styling */
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
@@ -1171,25 +1167,24 @@ css
 }
 
 .contact-form select {
-    /* To make the select arrow visible and style it if needed */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E') no-repeat right 15px center;
     background-size: 10px;
-    background-color: #fff; /* Ensure select has a background */
+    background-color: #fff;
 }
 
 
 /* Make the form responsive: stack columns on smaller screens */
 @media (max-width: 768px) {
     .contact-form .form-row {
-        flex-direction: column; /* Stack the columns vertically */
-        gap: 0; /* Remove the gap for stacked layout */
+        flex-direction: column;
+        gap: 0;
         margin-bottom: 0;
     }
     .contact-form .form-row .form-group {
-        margin-bottom: 1.5rem; /* Add back margin for spacing between stacked items */
+        margin-bottom: 1.5rem;
 }
 }
 
