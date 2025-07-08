@@ -2,7 +2,7 @@
 <h3 align="center">I’m a 2nd-year student and passionate Frontend Developer, building responsive and user-friendly web interfaces.</h3>
 
 - 🔭 I’m currently pursuing B.Tech from B.P.PODDAR INSTITUTE OF MANAGEMENT & TECHNOLOGY
--  KhaabarAdda(https://khaabaradda.rf.gd)
+-  KhaabarAdda (https://codewithbikram2025.github.io/khaabaradda-/)
 
 - 🌱 I’m currently learning *DSA in C language*
 
